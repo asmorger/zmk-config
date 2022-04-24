@@ -139,7 +139,7 @@
 
 		WINNAV {
 		bindings = <
-		    &kp BANG  &kp PG_UP &kp UP  &trans  &trans    			    &trans LC(LS(LALT(1)))  LC(LS(LALT(2))) LC(LS(LALT(3))) &trans 
+		    &kp BANG  &kp PG_UP &kp UP  &trans  &trans    			    &trans LC(LS(LALT(N1)))  LC(LS(LALT(N2))) LC(LS(LALT(N3))) &trans 
 		    &kp HOME  &kp LEFT &kp DOWN  &kp RIGHT  &kp END 			&trans &kp LGUI  &kp LC(LALT)  &trans &kp LC(LS(LALT))
 		    &kp LSFT  &kp PG_DN &kp LBKT &kp RBKT   &kp BSLH    		&trans &trans    &trans        &trans &trans
 		    			  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
