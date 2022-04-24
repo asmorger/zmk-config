@@ -102,7 +102,7 @@
                 
        	COLEMAK {
         bindings = <
-		    &kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp P 
+		    &kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SEMICOLON 
 		    &kp A &kp R &kp S &kp T &kp G 			        	&kp M &kp N &kp E &hl NAV I &hl NUM O
 		    &mt LSFT Z &kp X &kp C &kp D &kp V				    &kp K &kp H  &kp CMMA &kp DOT &mt LSFT RET
               				&kp SPC &sk LSFT  				&sk LCTL &sl SYM 
