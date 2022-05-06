@@ -25,6 +25,7 @@
 #define NAV 2
 #define NUM 3
 #define WINNAV 4
+#define EXT 5
 
 
 / { 
@@ -143,6 +144,15 @@
 		    &kp HOME  &kp LEFT &kp DOWN  &kp RIGHT  &kp END 			&trans &kp LGUI  &kp LC(LALT)  &trans &kp LC(LS(LALT))
 		    &kp LSFT  &kp PG_DN &kp LBKT &kp RBKT   &kp BSLH    		&trans &trans    &trans        &trans &trans
 		    			  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		>;
+		};
+
+		EXT {
+		bindings = <
+		    &kp ESC  &none    &kp K_VOL_DN  &kp K_VOL_UP &none    			    &kp HOME &kp PG_DN &kp PG_UP &kp END   &none 
+		    &kp LCTL &kp LALT &kp LGUI      &kp LSHFT    &kp LC(LS(LALT))		&kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC
+		    &kp F22  &none    &none         &kp TAB      &none   	        	&trans   &trans    &trans    &trans    &kp DEL
+		    			                         &none  &none  		    		&none &none 
 		>;
 		};	
 	};
