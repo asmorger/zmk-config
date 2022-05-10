@@ -113,7 +113,7 @@
 
        	SYM {
 		bindings = <
-		    &kp HASH  &kp COLN   &kp LT    &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp NUM_0 
+		    &kp HASH  &kp COLN   &kp LT    &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
 		    &kp LBRC  &kp RBRC   &kp LPAR  &kp RPAR  &kp QMARK 		&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
 		    &kp F22   &kp TILDE  &kp LBKT  &kp RBKT  &kp BSPC 	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
 			    		    &trans  &kp LC(BSPC)  					&kp TAB &mo 2 
