@@ -88,6 +88,14 @@
             bindings = <&sl>, <&kp>;
         };
 
+        td_a: tap_dance_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp LC(A)>;
+        };
+
         td_c: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -120,6 +128,14 @@
             bindings = <&kp P>, <&kp LC(P)>;
         };
 
+        td_s: tap_dance_10 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_S";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp S>, <&kp LC(S)>;
+        };
+
         td_t: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_T";
@@ -134,6 +150,14 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp LC(V)>;
+        };
+
+        td_w: tap_dance_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_W";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp W>, <&kp LC(W)>;
         };
 
         td_x: tap_dance_6 {
@@ -158,8 +182,8 @@
                 
        	COLEMAK {
         bindings = <
-		    &kp Q &kp W &td_f &td_p &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SEMICOLON 
-	        &kp A &kp R &kp S &td_t &kp G 			        	&kp M &td_n &kp E &hl NAV I &hl NUM O
+		    &kp Q &td_w &td_f &td_p &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SEMICOLON 
+	        &td_a &kp R &td_s &td_t &kp G 			        	&kp M &td_n &kp E &hl NAV I &hl NUM O
 		    &td_z &td_x &td_c &kp D &td_v				    &kp K &kp H  &kp CMMA &kp DOT &mt LSFT RET
               				&kp SPC &sk LSFT  				&sk LCTL &sl SYM 
 		>;
