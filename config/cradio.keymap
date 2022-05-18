@@ -88,20 +88,68 @@
             bindings = <&sl>, <&kp>;
         };
 
-	    td: tapdance {
+        td_c: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp C>, <&kp LC(C)>;
         };
 
-        td_t: tap_dance_0 {
+        td_f: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_F";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F>, <&kp LC(F)>;
+        };
+
+        td_n: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N>, <&kp LC(N)>;
+        };
+
+        td_p: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_P";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp P>, <&kp LC(P)>;
+        };
+
+        td_t: tap_dance_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_T";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp T>, <&kp LC(T)>;
+        };
+        
+        td_v: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_V";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp LC(V)>;
+        };
+
+        td_x: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_X";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp X>, <&kp LC(X)>;
+        };
+
+        td_z: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Z>, <&kp LC(Z)>;
         };
     };
 
@@ -110,9 +158,9 @@
                 
        	COLEMAK {
         bindings = <
-		    &kp Q &kp W &td F LC(F) &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SEMICOLON 
-	        &kp A &kp R &kp S &td_t &kp G 			        	&kp M &kp N &kp E &hl NAV I &hl NUM O
-		    &mt LSFT Z &kp X &kp C &kp D &kp V				    &kp K &kp H  &kp CMMA &kp DOT &mt LSFT RET
+		    &kp Q &kp W &td_f &td_p &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SEMICOLON 
+	        &kp A &kp R &kp S &td_t &kp G 			        	&kp M &td_n &kp E &hl NAV I &hl NUM O
+		    &td_z &td_x &td_c &kp D &td_v				    &kp K &kp H  &kp CMMA &kp DOT &mt LSFT RET
               				&kp SPC &sk LSFT  				&sk LCTL &sl SYM 
 		>;
         };
