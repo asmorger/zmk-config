@@ -1,0 +1,8 @@
+		WINNAV {
+		bindings = <
+		    &trans  &trans &trans  &trans  &trans    			&trans &trans &trans &trans &trans 
+		    &trans  &trans &trans  &trans  &trans 			    &trans &trans &trans &trans &trans
+		    &trans  &trans &trans &trans   &trans    	        &trans &trans &trans &trans &trans
+		    			            &trans &trans  				&trans  &trans 
+		>;
+		};
