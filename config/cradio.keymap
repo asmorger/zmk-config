@@ -142,7 +142,7 @@
 		    &trans  &trans &trans  &trans  &trans    			            &trans &trans &trans &trans &trans 
 		    &kp LS(1)  &kp LS(2) &kp LS(3) &kp LS(4) &kp LS(5) 			    &trans &trans &trans &trans &trans
 		    &trans  &trans &trans &trans   &trans    	                    &trans &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &none
-		    			        &kp LS(LGUI(C)) &kp LA(SPC)  				&kp LS(LGUI(O))  &kp LS(LGUI(P)) 
+		    			        &kp LS(LGUI(C)) &kp LA(SPC)  				&kp LS(LGUI(N0))  &kp LS(LGUI(P)) 
 		>;
 		};
 	};
