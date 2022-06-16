@@ -1,0 +1,153 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
+
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
+/* Layers */
+#define COLEMAK 0
+#define SYM 1
+#define NAV 2
+#define NUM 3
+#define WINNAV 4
+
+
+/ { 
+
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        
+         combo_tab {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+        };
+        
+        combo_ralt {
+            timeout-ms = <50>;
+            key-positions = <17 16>;
+            bindings = <&kp RALT>;
+        };
+        
+        combo_lalt {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LALT>;
+        };
+        
+        combo_lgui {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LGUI>;
+        };
+        
+        combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp RGUI>;
+        };
+
+        combo_caps {
+            timeout-ms = <30>;
+	        key-positions = <12 13 14>;
+            bindings = <&caps_word>;
+        };
+        
+    };
+
+    behaviors {
+
+        hl: homerow_layers {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&sl>, <&kp>;
+        };
+
+        cl: control_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CONTROL_LAYERS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+                
+       	COLEMAK {
+        bindings = <
+		    &kp Q       &cl LC(W) W &cl LC(F) F &kp P       &kp B 						&kp J         &kp L       &kp U    &kp Y     &kp SEMICOLON 
+	        &cl LC(A) A &kp R       &cl LC(S) S &cl LC(T) T &kp G 			        	&cl LA(RET) M &cl LC(N) N &kp E    &hl NAV I &hl NUM O
+		    &cl LC(Z) Z &cl LC(X) X &cl LC(C) C &kp D       &cl LC(V) V				    &kp K         &kp H       &kp CMMA &kp DOT &sl WINNAV
+              				&kp SPC &sk LSFT  				&sk LS(LGUI) &sl SYM 
+		>;
+        };
+
+       	SYM {
+		bindings = <
+		    &kp HASH  &kp COLN   &kp LT    &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
+		    &kp LBRC  &kp RBRC   &kp LPAR  &kp RPAR  &kp QMARK 		&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
+		    &kp F22   &kp TILDE  &kp LBKT  &kp RBKT  &kp BSPC 	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
+			    		    &trans  &kp LC(BSPC)  					&kp TAB &mo 2 
+		>;
+		};
+		
+		NAV {
+		bindings = <
+		    &kp BANG  &kp PG_UP &kp UP  &trans  &trans    			    &trans &trans    &trans        &trans &trans 
+		    &kp HOME  &kp LEFT &kp DOWN  &kp RIGHT  &kp END 			&trans &kp LGUI  &kp LC(LALT)  &trans &kp LC(LS(LALT))
+		    &kp LSFT  &kp PG_DN &kp LBKT &kp RBKT   &kp BSLH    		&trans &trans    &trans        &trans &trans
+		    			  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		>;
+		};	
+
+		NUM {
+		bindings = <
+		    &kp FSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp QMARK  &kp F7 &kp F8 &kp F9  &kp F10 
+		    &kp N0    &kp N1 &kp N2  &kp N3  &kp MINUS 			    &kp EXCL   &kp F4 &kp F5 &kp F6  &kp F11
+		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp EQUAL    			&kp LGUI   &kp F1 &kp F2 &kp F3  &kp F12
+		    			  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		>;
+		};	
+
+		WINNAV {
+		bindings = <
+		    &trans  &trans &trans  &trans  &trans    			            &trans &trans &trans &trans &trans 
+		    &kp LS(1)  &kp LS(2) &kp LS(3) &kp LS(4) &kp LS(5) 			    &trans &trans &trans &trans &trans
+		    &trans  &trans &trans &trans   &trans    	                    &trans &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &none
+		    			        &kp LS(LG(C)) &kp LA(SPC)  				&kp LS(LG(N0))  &kp LS(LG(P)) 
+		>;
+		};
+	};
+};
