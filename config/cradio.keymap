@@ -23,8 +23,7 @@
 #define COLEMAK 0
 #define SYM 1
 #define NAV 2
-#define WINNAV 3
-#define NUM2 4
+#define NUM2 3
 
 / { 
 
@@ -118,7 +117,7 @@
        	SYM {
 		bindings = <
 		    &kp HASH  &kp COLN   &kp LT    &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
-		    &kp LBRC  &kp RBRC   &kp LPAR  &kp RPAR  &kp QMARK 		&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
+		    &kp LBRC  &kp RBRC   &kp LPAR  &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
 		    &kp F22   &kp TILDE  &kp LBKT  &kp RBKT  &none    	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
 			    		                &trans  &none  					&kp TAB &mo 2 
 		>;
