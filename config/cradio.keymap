@@ -109,9 +109,9 @@
        	COLEMAK {
         bindings = <
 		    &kp Q       &cl LC(W) W &cl LC(F) F &kp P       &kp B 						&kp J         &kp L       &kp U    &kp Y     &kp SEMICOLON 
-	        &cl LC(A) A &kp R       &cl LC(S) S &cl LC(T) T &kp G 			        	&cl LA(RET) M &cl LC(N) N &kp E    &hl NAV I &hl NUM2 O
+	        &cl LC(A) A &kp R       &cl LC(S) S &cl LC(T) T &kp G 			        	&cl LA(RET) M &cl LC(N) N &kp E    &hl NAV I &kp O
 		    &cl LC(Z) Z &cl LC(X) X &cl LC(C) C &kp D       &cl LC(V) V				    &kp K         &kp H       &kp CMMA &kp DOT &none
-              				&kp SPC &sk LSFT  				&sk LS(LGUI) &sl SYM 
+              				&kp SPC &sk LSFT  				&to NUM2 &sl SYM 
 		>;
         };
 
@@ -119,8 +119,8 @@
 		bindings = <
 		    &kp HASH  &kp COLN   &kp LT    &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
 		    &kp LBRC  &kp RBRC   &kp LPAR  &kp RPAR  &kp QMARK 		&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
-		    &kp F22   &kp TILDE  &kp LBKT  &kp RBKT  &kp BSPC 	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
-			    		    &trans  &kp LC(BSPC)  					&kp TAB &mo 2 
+		    &kp F22   &kp TILDE  &kp LBKT  &kp RBKT  &none    	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
+			    		                &trans  &none  					&kp TAB &mo 2 
 		>;
 		};
 		
@@ -138,7 +138,7 @@
 		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp N0      &kp LC(T)  &kp F12  &kp DOLLAR  &trans 
 		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT   &none
 		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp MINUS     			&trans      &kp F10    &kp F11  &trans      &trans
-		    			  &mo 3 &kp LCTL  				&kp LC(B)  &kp  F5
+		    			  &to COLEMAK &kp LCTL  				&kp LC(B)  &kp  F5
 		>;
 		};	
 
