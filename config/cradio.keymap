@@ -33,7 +33,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
         
@@ -52,7 +52,7 @@
         combo_tab {
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kp LALT>;
+            bindings = <&kp TAB>;
         };
         
         combo_sticky_shift_left {
@@ -61,16 +61,22 @@
             bindings = <&sk LSFT>;
         };
 
+        combo_caps {
+            timeout-ms = <30>;
+	        key-positions = <11 12 13>;
+            bindings = <&caps_word>;
+        };
+        
         combo_sticky_shift_right {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&sk LSFT>;
         };
 
-        combo_caps {
+        combo_enter {
             timeout-ms = <30>;
-	        key-positions = <11 12 13>;
-            bindings = <&caps_word>;
+	        key-positions = <27 28>;
+            bindings = <&kp TAB>;
         };
         
     };
