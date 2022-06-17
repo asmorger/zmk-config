@@ -36,6 +36,12 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+        
+        combo_word_backspace {
+            timeout-ms = <50>;
+            key-positions = <6 7 8>;
+            bindings = <&kp LC(BSPC)>;
+        };
                 
         combo_backspace {
             timeout-ms = <50>;
@@ -59,12 +65,6 @@
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&sk LSFT>;
-        };
-
-        combo_word_backspace {
-            timeout-ms = <50>;
-            key-positions = <16 17 18>;
-            bindings = <&kp LC(BSPC)>;
         };
 
         combo_caps {
