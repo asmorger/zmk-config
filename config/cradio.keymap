@@ -105,9 +105,9 @@
                 
        	COLEMAK {
         bindings = <
-		    &kp Q       &cl LC(W) W &cl LC(F) F &kp P       &kp B 						&kp J         &kp L       &kp U    &kp Y     &kp SEMICOLON 
-	        &cl LC(A) A &kp R       &cl LC(S) S &cl LC(T) T &kp G 			        	&cl LA(RET) M &cl LC(N) N &kp E    &kp I &kp O
-		    &cl LC(Z) Z &cl LC(X) X &cl LC(C) C &kp D       &cl LC(V) V				    &kp K         &kp H       &kp CMMA &kp DOT &none
+		    &kp Q       &cl LC(W) W &cl LC(F) F &kp P       &kp B 						&kp J   &kp L       &kp U    &kp Y           &kp SEMICOLON 
+	        &cl LC(A) A &kp R       &cl LC(S) S &cl LC(T) T &kp G 			        	&kp M   &cl LC(N) N &kp E    &cl LA(RET) I   &kp O
+		    &cl LC(Z) Z &cl LC(X) X &cl LC(C) C &kp D       &cl LC(V) V				    &kp K   &kp H       &kp CMMA &kp DOT         &none
               				&kp SPC &sk LSFT  				&to NUM2 &sl SYM 
 		>;
         };
