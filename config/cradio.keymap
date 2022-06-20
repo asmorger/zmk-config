@@ -119,7 +119,40 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings
-                = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQL &kp GT &kp SPC>
+                = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQL &kp GT &kp SPC &kp SEMICOLON &kp LEFT>
+                ;
+        };
+
+        csharp_method: csharp_method {
+            label = "ZM_csharp_method";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_tap &kp LBRC &kp RBRC &kp LEFT &kp ENTER>
+                ;
+        };
+
+        csharp_generic: csharp_generic {
+            label = "ZM_csharp_generic";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_tap &kp LT &kp GT &kp LEFT>
+                ;
+        };
+
+        csharp_array: csharp_array {
+            label = "ZM_csharp_array";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_tap &kp LBKT &kp RBKT &kp SEMICOLON &kp LEFT &kp LEFT &kp ENTER>
                 ;
         };
     };
