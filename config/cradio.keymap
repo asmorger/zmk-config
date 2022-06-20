@@ -98,7 +98,40 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LPAR>, <&csharp_func>;
+        };
+
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LT>, <&csharp_generic>;
+        };
+
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBRC>, <&csharp_method>;
+        };
+
+        td3: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&csharp_array>;
+        };
     };
+
 
     macros {
         zed_em_kay: zed_em_kay {
@@ -171,9 +204,9 @@
 
        	SYM {
 		bindings = <
-		    &kp HASH  &kp COLN   &kp LT    &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
-		    &kp LBRC  &kp RBRC   &kp LPAR  &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
-		    &kp F22   &kp TILDE  &kp LBKT  &kp RBKT  &kp AMPS   	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
+		    &kp HASH  &kp COLN   &td1      &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
+		    &td2      &kp RBRC   &td0      &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
+		    &kp F22   &kp TILDE  &td3      &kp RBKT  &kp AMPS   	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
 			    		                &trans  &csharp_func  					&kp TAB &mo 2 
 		>;
 		};
