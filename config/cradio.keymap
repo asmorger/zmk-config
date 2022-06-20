@@ -207,7 +207,7 @@
 		    &kp HASH  &kp COLN   &td1      &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
 		    &td2      &kp RBRC   &td0      &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
 		    &kp F22   &kp TILDE  &td3      &kp RBKT  &kp AMPS   	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
-			    		                &trans  &csharp_func  					&kp TAB &mo 2 
+			    		                &trans  &kp LA(RET)  					&kp TAB &mo 2 
 		>;
 		};
 
@@ -216,7 +216,7 @@
 		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans 
 		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT   &kp ENTER 
 		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp MINUS     			&kp DOLLAR  &kp F10    &kp F11   &trans      &trans
-		    			  &to COLEMAK &trans  				&sk LS(LALT)  &kp  F5
+		    			  &to COLEMAK &kp LCTRL 				&sk LS(LALT)  &kp  F5
 		>;
 		};	
 
