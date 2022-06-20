@@ -112,7 +112,7 @@
                 ;
         };
 
-        csharp_func: csharp_funcy {
+        csharp_func: csharp_func {
             label = "ZM_csharp_func";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
