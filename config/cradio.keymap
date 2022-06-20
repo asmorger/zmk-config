@@ -100,7 +100,7 @@
         };
 
         td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -108,7 +108,7 @@
         };
 
         td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -116,7 +116,7 @@
         };
 
         td2: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -124,7 +124,7 @@
         };
 
         td3: tap_dance_3 {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_DANCE_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -213,10 +213,10 @@
 
 		NUM {
 		bindings = <
-		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp N0      &kp LC(T)  &kp F12  &kp DOLLAR  &trans 
-		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER 
-		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp MINUS     			&kp DOLLAR  &kp F10    &kp F11  &trans      &trans
-		    			  &to COLEMAK &kp LS(LALT)  				&kp LC(B)  &kp  F5
+		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans 
+		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT   &kp ENTER 
+		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp MINUS     			&kp DOLLAR  &kp F10    &kp F11   &trans      &trans
+		    			  &to COLEMAK &trans  				&sk LSFT(LALT)  &kp  F5
 		>;
 		};	
 
