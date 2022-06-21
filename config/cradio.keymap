@@ -223,9 +223,9 @@
 
 		NAV {
 		bindings = <
-		    &trans  &trans &trans &trans  &trans    			&trans &trans       &trans       &trans     &trans 
-		    &trans  &trans &trans &trans  &trans 			    &trans &trans       &trans       &trans     &trans
-		    &trans  &trans &trans &trans  &trans    	        &trans &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &none
+		    &trans  &trans &trans &trans  &trans    			&trans     &trans       &trans       &trans     &trans 
+		    &trans  &trans &trans &trans  &trans 			    &trans     &trans       &trans       &trans     &trans
+		    &trans  &trans &trans &trans  &trans    	        &kp C_PLAY &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &kp C_PAUSE
 		    			        &trans &trans  				&trans  &sk LS(LGUI)  
 		>;
 		};
