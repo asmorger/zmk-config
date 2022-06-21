@@ -205,7 +205,7 @@
 
        	SYM {
 		bindings = <
-		    &kp HASH  &kp COLN   &td1      &kp GT    &kp EXCL		&kp LA(SPC) &kp UNDER &kp PIPE &kp APOS  &kp ESC 
+		    &kp HASH  &kp COLN   &td1      &kp GT    &kp EXCL		&none       &kp UNDER &kp PIPE &kp APOS  &kp ESC 
 		    &td2      &kp RBRC   &td0      &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
 		    &kp F22   &kp TILDE  &td3      &kp RBKT  &kp AMPS   	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
 			    		                &trans  &kp LA(RET)  					&kp TAB &mo 2 
@@ -223,10 +223,10 @@
 
 		NAV {
 		bindings = <
-		    &trans  &trans &trans &trans  &trans    			&trans     &trans       &trans       &trans     &trans 
-		    &trans  &trans &trans &trans  &trans 			    &trans     &trans       &trans       &trans     &trans
-		    &trans  &trans &trans &trans  &trans    	        &kp C_PLAY &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &kp C_PAUSE
-		    			        &trans &trans  				&trans  &sk LS(LGUI)  
+		    &trans  &trans &trans        &trans             &trans    			&trans     &trans        &trans         &trans     &trans 
+		    &trans  &trans &kp S         &kp LS(LG(ENTER))  &trans		        &trans     &kp LS(LG(O)) &kp LS(LG(P))  &trans     &trans
+		    &trans  &trans &kp LS(LG(C)) &trans             &trans             	&kp C_PLAY &kp C_VOL_UP  &kp C_VOL_DN   &kp C_MUTE &kp C_PAUSE
+		    			        &none &trans  				                &trans  &sk LS(LGUI)  
 		>;
 		};
 	};
