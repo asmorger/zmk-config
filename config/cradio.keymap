@@ -202,7 +202,7 @@
 		NAV {
 		bindings = <
 		    &trans  &trans &trans        &trans             &trans    			&trans     &trans        &trans         &trans     &trans 
-		    &trans  &trans &kp LS(LG(S)) &kp LS(LG(ENTER))  &trans		        &trans     &kp LS(LG(O)) &kp LS(LG(P))  &trans     &trans
+		    &trans  &trans &kp LS(LG(S)) &kp LS(LG(ENTER))  &trans		        &trans     &kp LG(O) &kp LG(P)  &trans     &trans
 		    &trans  &kp LS(LG(C)) &trans &kp LS(LG(SPC))    &trans             	&kp C_PLAY &kp C_VOL_UP  &kp C_VOL_DN   &kp C_MUTE &kp C_PAUSE
 		    			        &none &trans  				                &trans  &sk LS(LGUI)  
 		>;
