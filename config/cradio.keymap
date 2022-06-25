@@ -75,7 +75,7 @@
             tapping-term-ms = <220>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&sl>, <&kp>;
+            bindings = <&sk>, <&kp>;
         };
 
         td0: tap_dance_0 {
