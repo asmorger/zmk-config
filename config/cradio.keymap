@@ -34,6 +34,12 @@
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
+                
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp TAB>;
+        };
         
         combo_word_backspace {
             timeout-ms = <50>;
@@ -46,29 +52,11 @@
             key-positions = <7 8>;
             bindings = <&kp BSPC>;
         };
-        
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp TAB>;
-        };
-        
-        combo_sticky_shift_left {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&sk LSFT>;
-        };
 
         combo_caps {
             timeout-ms = <30>;
-	        key-positions = <11 12 13>;
+	        key-positions = <21 22 23>;
             bindings = <&caps_word>;
-        };
-        
-        combo_sticky_shift_right {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&sk LSFT>;
         };
 
         combo_enter {
