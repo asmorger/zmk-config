@@ -23,7 +23,8 @@
 #define COLEMAK 0
 #define SYM 1
 #define NUM 2
-#define NAV 3
+#define DIR 3
+#define NAV 4
 
 / { 
 
@@ -76,6 +77,16 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&sk>, <&kp>;
+        };
+
+        ll: homerow_layers {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&sl>, <&kp>;
         };
 
         td0: tap_dance_0 {
@@ -176,7 +187,7 @@
         bindings = <
 		    &kp Q      &kp W       &kp F      &kp P       &kp B 			&kp J   &kp L        &kp U       &kp Y        &kp SEMICOLON 
 	        &hl LGUI A &hl LALT R  &hl LSFT S &hl LCTRL T &kp G 			&kp M   &hl LCTRL N  &hl LSFT E  &hl LALT I   &hl LGUI O
-		    &kp Z      &kp X       &kp C      &kp D       &kp V				&kp K   &kp H        &kp CMMA    &kp DOT      &key_repeat
+		    &kp Z      &kp X       &kp C      &ll DIR D       &kp V				&kp K   &kp H        &kp CMMA    &kp DOT      &key_repeat
               				&hl NAV SPC &sk LSFT  				&to NUM &sl SYM 
 		>;
         };
@@ -192,17 +203,26 @@
 
 		NUM {
 		bindings = <
-		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans 
+		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp HOME    &kp PG_DN  &kp PG_UP &kp END     &kp TAB
 		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT   &kp ENTER 
 		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp MINUS     			&kp DOLLAR  &kp F10    &kp F11   &trans      &trans
 		    			  &to COLEMAK &kp LCTRL 				&sk LS(LALT)  &kp  F5
 		>;
 		};	
 
+        DIR {
+		bindings = <
+		    &trans  &trans   &trans   &trans   &trans    			&kp HOME    &kp PG_DN  &kp PG_UP &kp END     &kp TAB 
+		    &trans  &trans   &trans   &trans   &trans			    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT   &kp ENTER 
+		    &trans  &trans   &trans   &trans   &trans     			&kp DOLLAR  &trans     &trans    &trans      &trans
+		    			 &kp SPC &kp LCTRL 				&sk LS(LALT)  &kp  F5
+		>;
+		};
+
 		NAV {
 		bindings = <
 		    &trans  &trans &trans        &trans             &trans    			&trans     &trans        &trans         &trans     &trans 
-		    &trans  &trans &kp LS(LG(S)) &kp LS(LG(ENTER))  &trans		        &trans     &kp LG(O) &kp LG(P)  &trans     &trans
+		    &trans  &trans &kp LS(LG(S)) &kp LS(LG(ENTER))  &trans		        &trans     &kp LS(LG(O)) &kp LS(LG(P))  &trans     &trans
 		    &trans  &kp LS(LG(C)) &trans &kp LS(LG(SPC))    &trans             	&kp C_PLAY &kp C_VOL_UP  &kp C_VOL_DN   &kp C_MUTE &kp C_PAUSE
 		    			        &none &trans  				                &trans  &sk LS(LGUI)  
 		>;
