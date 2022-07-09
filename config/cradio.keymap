@@ -22,10 +22,9 @@
 /* Layers */
 #define COLEMAK 0
 #define SYM 1
-#define NUM 2
-#define DIR 3
-#define NUM2 4
-#define NAV 5
+#define DIR 2
+#define NUM 3
+#define NAV 4
 
 / { 
 
@@ -188,8 +187,8 @@
         bindings = <
 		    &kp Q      &kp W       &kp F      &kp P       &kp B 			&kp J   &kp L        &kp U       &kp Y        &kp SEMICOLON 
 	        &mt LGUI A &mt LALT R  &mt LSFT S &mt LCTRL T &kp G 			&kp M   &mt LCTRL N  &mt LSFT E  &mt LALT I   &mt LGUI O
-		    &kp Z      &kp X       &kp C      &ll DIR D       &kp V			&kp K   &ll NUM2 H   &kp CMMA    &kp DOT      &key_repeat
-              				&hl NAV SPC &sk LSFT  				&to NUM &sl SYM 
+		    &kp Z      &kp X       &kp C      &ll DIR D       &kp V			&kp K   &ll NUM H   &kp CMMA    &kp DOT      &key_repeat
+              				       &hl NAV SPC &sk LSFT  				    &none   &sl SYM 
 		>;
         };
 
@@ -199,15 +198,6 @@
 		    &td2      &kp RBRC   &td0      &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
 		    &kp F22   &kp TILDE  &td3      &kp RBKT  &kp AMPS   	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
 			    		                &trans  &kp LA(RET)  					&kp TAB &mo 2 
-		>;
-		};
-
-		NUM {
-		bindings = <
-		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&kp HOME    &kp PG_DN  &kp PG_UP &kp END     &kp TAB
-		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT   &kp ENTER 
-		    &kp STAR  &kp N4 &kp N5  &kp N6  &kp MINUS     			&kp DOLLAR  &kp F10    &kp F11   &trans      &trans
-		    			  &to COLEMAK &kp LCTRL 				&sk LS(LALT)  &kp  F5
 		>;
 		};	
 
@@ -220,7 +210,7 @@
 		>;
 		};
 
-        NUM2 {
+        NUM {
 		bindings = <
 		    &kp BSLH  &kp N7 &kp N8  &kp N9  &kp PLUS    			&trans  &trans   &trans   &trans   &trans
 		    &kp N0    &kp N1 &kp N2  &kp N3  &kp EQUAL			    &trans  &trans   &trans   &trans   &trans 
