@@ -187,7 +187,7 @@
        	COLEMAK {
         bindings = <
 		    &kp Q      &kp W       &kp F      &kp P       &kp B 			&kp J   &kp L        &kp U       &kp Y        &kp SEMICOLON 
-	        &hl LGUI A &hl LALT R  &hl LSFT S &hl LCTRL T &kp G 			&kp M   &hl LCTRL N  &hl LSFT E  &hl LALT I   &hl LGUI O
+	        &mt LGUI A &mt LALT R  &mt LSFT S &mt LCTRL T &kp G 			&kp M   &mt LCTRL N  &mt LSFT E  &mt LALT I   &mt LGUI O
 		    &kp Z      &kp X       &kp C      &ll DIR D       &kp V			&kp K   &ll NUM2 H   &kp CMMA    &kp DOT      &key_repeat
               				&hl NAV SPC &sk LSFT  				&to NUM &sl SYM 
 		>;
