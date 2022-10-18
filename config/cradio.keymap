@@ -197,7 +197,7 @@
 		    &kp HASH  &kp COLN   &td1      &kp GT    &kp EXCL		&none       &kp UNDER &kp PIPE &kp APOS  &kp ESC 
 		    &td2      &kp RBRC   &td0      &kp RPAR  &kp QMARK  	&kp EQL     &kp TILDE &kp FSLH &kp DQT   &kp ENTER 
 		    &kp F22   &kp TILDE  &td3      &kp RBKT  &kp AMPS   	    &kp MINUS   &kp MINUS &kp BSLH &kp GRAVE &kp F21
-			    		                &trans  &kp LA(RET)  					&kp TAB &mo 2 
+			    		          &kp BSPC  &kp LC(BSPC)  		&kp TAB &mo 2 
 		>;
 		};	
 
